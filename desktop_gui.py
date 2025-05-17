@@ -6,7 +6,7 @@ import datetime
 import os
 
 AUTHOR = "Ethan Bragdon"
-VERSION = "Alpha 1.0.0"
+VERSION = "5.0.0"
 
 def generate_code(length: int) -> str:
     chars = string.ascii_letters + string.digits
@@ -23,7 +23,7 @@ SERVICES = {
 class CodeGeneratorApp(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title(f"Gift Code Generator v{VERSION} Created By Ethan Bragdon (Educational Purposes Only)")
+        self.title(f"Gift Code Generator v{VERSION}")
         self.geometry("750x600")
         self.configure(bg='#2e2e2e')
 
@@ -41,18 +41,18 @@ class CodeGeneratorApp(tk.Tk):
         self.type_combo.current(0)
 
         ttk.Label(main_frame, text="Quantity:").grid(column=0, row=1, sticky=tk.W, pady=(10,0))
-        self.quantity = tk.IntVar(value=25)
-        self.qty_spin = ttk.Spinbox(main_frame, from_=1, to=150000, textvariable=self.quantity)
+        self.quantity = tk.IntVar(value=1)
+        self.qty_spin = ttk.Spinbox(main_frame, from_=1, to=1000, textvariable=self.quantity)
         self.qty_spin.grid(column=1, row=1, sticky=tk.W, pady=(10,0))
 
         self.save_var = tk.BooleanVar(value=False)
-        self.save_check = ttk.Checkbutton(main_frame, text="Save To A Local .txt File", variable=self.save_var)
+        self.save_check = ttk.Checkbutton(main_frame, text="Save codes to file", variable=self.save_var)
         self.save_check.grid(column=0, row=2, columnspan=2, sticky=tk.W, pady=(10,0))
 
-        self.generate_btn = ttk.Button(main_frame, text="Generate Codes", command=self.generate_codes)
+        self.generate_btn = ttk.Button(main_frame, text="Generate", command=self.generate_codes)
         self.generate_btn.grid(column=0, row=3, columnspan=2, pady=20)
 
-        ttk.Label(main_frame, text="Previously Generated Codes:").grid(column=0, row=4, sticky=tk.W)
+        ttk.Label(main_frame, text="Generated Codes:").grid(column=0, row=4, sticky=tk.W)
         self.text_box = tk.Text(main_frame, height=15, width=85, state=tk.DISABLED, bg="#1e1e1e", fg="white")
         self.text_box.grid(column=0, row=5, columnspan=2, pady=(5,0))
 

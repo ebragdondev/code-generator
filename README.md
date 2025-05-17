@@ -1,8 +1,8 @@
-# Educational Mock Gift Code Generator
+# Nitro Gift Code Generator
 
-Version: Alpha 1.0.0  
+Version: 5.0.0  
 Author: Ethan Bragdon  
-Date: 05-16-2025
+Date: 2025-05-13
 
 Mock gift code generator using Kivy for cross-platform and Android compatibility.
 
@@ -27,8 +27,4 @@ Mock gift code generator using Kivy for cross-platform and Android compatibility
 ## Desktop Build with PyInstaller
 
 1. pip install pyinstaller
-2. pyinstaller --noconfirm --onefile --windowed --icon=nitro_icon.ico desktop_gui.py (Make sure it is in the same path as all of the files)
-
-## Prebuilt Desktop Application Instructions
-1. Download Python Onto Your Local Machine
-2. Open The Application
+2. pyinstaller --noconfirm --onefile --windowed --icon=nitro_icon.ico script.py
