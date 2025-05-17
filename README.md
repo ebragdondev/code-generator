@@ -1,7 +1,6 @@
-# Nitro Gift Code Generator
+# CodeGen
 
-Version: Alpha 1.0.3 
-Author: Ethan Bragdon  
+Version: Alpha 1.0.3
 Date: 05-17-2025
 
 Mock gift code generator using Kivy for cross-platform and Android compatibility.
@@ -12,6 +11,7 @@ Mock gift code generator using Kivy for cross-platform and Android compatibility
 - Android-compatible Kivy UI
 - Save results from Kivy text box manually
 - Desktop GUI version available separately
+- Admin Panel For Easy Service Creation And Editing
 
 ## Build APK for Android (on Linux/macOS)
 
