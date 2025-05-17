@@ -1,8 +1,8 @@
 # Nitro Gift Code Generator
 
-Version: 5.0.0  
+Version: Alpha 1.0.3 
 Author: Ethan Bragdon  
-Date: 2025-05-13
+Date: 05-17-2025
 
 Mock gift code generator using Kivy for cross-platform and Android compatibility.
 
