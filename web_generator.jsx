@@ -1,4 +1,1 @@
-
-import React, { useState } from "react";
-...
-export default function WebGenerator() { ... }
+// React JSX web version placeholder
